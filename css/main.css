@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bayon&family=Big+Shoulders+Display:wght@100..900&family=Chango&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&family=League+Spartan:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bayon&family=Big+Shoulders+Display:wght@100..900&family=Chango&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&family=League+Spartan:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+:root {
+	font-family: "Red Hat Text", serif;
+	font-family: "DM Serif Display", serif;
+
+	--color-primary-dark-pink: #ba4270;
+	--color-primary-link-water-white: #fbfcfe;
+
+	--color-secondary-suan-juan-blue: #36536b;
+	--color-secondary-mirage-blue: #1b262f;
+	--color-secondary-charm-pink: #da6d97;
+	--color-secondary-light-suan-blue: #6c8294;
+
+	--typography-body-text-size: 15px;
+	--typography-body-line-size: 28px;
+
+	--typography-headings-h1-large-text-size: 72px;
+	--typography-headings-h1-large-line-size: 72px;
+
+	--typography-headings-h1-small-text-size: 56px;
+	--typography-headings-h1-small-line-size: 56px;
+
+	--typography-headings-h2-text-size: 48px;
+	--typography-headings-h2-line-size: 56px;
+
+	--typography-headings-h3-big-text-size: 32px;
+	--typography-headings-h3-big-line-size: 40px;
+
+	--typography-headings-h3-small-line-size: 18px;
+	--typography-headings-h3-small-line-size: 25px;
+
+	--typography-headings-h4-text-size: 24px;
+	--typography-headings-h4-line-size: 32px;
+}
+
+body {
+	background-color: #edf3f8;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	margin-top: 30px;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 30px;
+}
+
+.header-menu-nav {
+	display: none;
+}
+
+.btn-schedule {
+	display: none;
+}
+
+@media screen and (min-width: 765px) {
+	.header-menu-nav {
+		display: flex;
+	}
+
+	.header-menu-nav {
+		list-style-type: none;
+		width: 50%;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.header-li {
+		text-decoration: none;
+	}
+
+	.btn-schedule {
+		display: flex;
+	}
+
+	a {
+		text-decoration: none;
+		text-align: center;
+	}
+
+	.header-menu-nav a {
+		color: var(--color-secondary-suan-juan-blue);
+	}
+
+	.menu-burger {
+		display: none;
+	}
+
+	.btn-schedule-head {
+		width: 30%;
+	}
+}

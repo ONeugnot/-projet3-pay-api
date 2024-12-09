@@ -1,0 +1,9 @@
+:root {
+	--buttons-primary-normal-state: #ba4270;
+	--buttons-primary-hover-state: #da6d97;
+	--buttons-primary-disabled-state: #dca0b7;
+
+	--buttons-secondary-normal-state-light: #1b262f;
+	--buttons-secondary-hover-state-light: #ffffff;
+    --buttons-secondary-disabled-state-light: #1b262f;
+}
