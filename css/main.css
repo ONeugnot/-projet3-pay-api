@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bayon&family=Big+Shoulders+Display:wght@100..900&family=Chango&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&family=League+Spartan:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 
 :root {
-	font-family: "Red Hat Text", serif;
-	font-family: "DM Serif Display", serif;
+	--font-family-red: "Red Hat Text", serif;
+	--font-family-dm: "DM Serif Display", serif;
 
 	--color-primary-dark-pink: #ba4270;
 	--color-primary-link-water-white: #fbfcfe;
@@ -36,19 +36,28 @@
 }
 
 body {
-	background-color: #edf3f8;
+	background-color: var(--color-primary-link-water-white);
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 header {
 	display: flex;
 	width: 100%;
 	margin-top: 30px;
-	position: fixed;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+}
+
+.border-rond {
+	position: relative;
+	background-color: #eff2f5;
+	width: 100%;
+	height: 30vh;
+	border-radius: 0px 0px 80% 80%;
+	z-index: -1;
 }
 
 nav {
@@ -60,20 +69,87 @@ nav {
 
 .header-menu-nav {
 	display: none;
+	font-family: var(--font-family-red);
 }
 
 .btn-schedule {
 	display: none;
 }
 
-@media screen and (min-width: 765px) {
+.header-li {
+	font-weight: 700;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.image-iphone {
+	width: 60%;
+	position: absolute;
+	top: 100px;
+	z-index: -1;
+}
+
+.info-hero {
+	width: 85%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 230px;
+}
+
+.info-hero h1 {
+	font-family: var(--font-family-red);
+	color: var(--color-secondary-suan-juan-blue);
+	font-weight: 600;
+	text-align: center;
+	line-height: var(--typography-headings-h3-big-line-size);
+	font-size: var(--typography-headings-h3-big-text-size);
+}
+
+.input-hero a {
+	width: 100%;
+	padding: 10px;
+}
+
+.contact-hero a {
+	text-decoration: none;
+	color: var(--color-secondary-mirage-blue);
+	font-family: var(--font-family-red);
+}
+
+.question-hero {
+	font-family: var(--font-family-red);
+}
+@media screen and (min-width: 767px) {
+	nav {
+		display: flex;
+		align-items: center;
+	}
+
 	.header-menu-nav {
 		display: flex;
 	}
 
+	.logo-site {
+		width: 250px;
+	}
+
 	.header-menu-nav {
 		list-style-type: none;
-		width: 50%;
+		width: 100%;
 		display: flex;
 		justify-content: space-evenly;
 	}
@@ -86,20 +162,84 @@ nav {
 		display: flex;
 	}
 
-	a {
+	.header-menu-nav a {
 		text-decoration: none;
 		text-align: center;
 	}
 
 	.header-menu-nav a {
-		color: var(--color-secondary-suan-juan-blue);
+		color: var(--color-secondary-mirage-blue);
 	}
 
 	.menu-burger {
 		display: none;
 	}
 
-	.btn-schedule-head {
-		width: 30%;
+	.tablet-align {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 60%;
+	}
+
+	.image-iphone {
+		width: 40%;
+		position: absolute;
+		top: 100px;
+		z-index: -1;
+	}
+
+	.info-hero {
+		width: 85%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 290px;
+	}
+
+	.input-hero a {
+		position: absolute;
+		width: 25%;
+		padding: 1px;
+		right: 60px;
+	}
+
+	.btn-hero {
+		box-shadow: 0px 7px 8px 0px#36536b40;
+	}
+
+	.info-hero h1 {
+		font-size: var(--typography-headings-h2-text-size);
+	}
+
+	.contact-hero {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	.tablet-align {
+		width: 50%;
+	}
+
+	body {
+		display: flex;
+		align-items: center;
+	}
+
+	header {
+		width: 90%;
+	}
+
+	nav {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.header-menu-nav a:hover {
+		color: var(--color-secondary-suan-juan-blue);
 	}
 }

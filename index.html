@@ -7,23 +7,70 @@
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="stylesheet" href="css/components/button.css" />
+		<link rel="stylesheet" href="./css/components/input.css" />
 		<title>¨Payapi</title>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<a href="./index.html"><img class="logo-site" src="./assets/nom-site/logo-payapi.svg" alt="Logo du site Payapi" /></a>
-				<ul class="header-menu-nav">
-					<li class="header-li"><a href="./pages/pricing.html">Pricing</a></li>
-					<li class="header-li"><a href="./pages/about.html">About</a></li>
-					<li class="header-li"><a href="./pages/contact.html">Contact</a></li>
-				</ul>
+		<div class="border-rond">
+			<header>
+				<nav>
+					<div class="tablet-align">
+						<a href="./index.html"
+							><img
+								class="logo-site"
+								src="./assets/nom-site/logo-payapi.svg"
+								alt="Logo du site Payapi"
+						/></a>
+						<ul class="header-menu-nav">
+							<li class="header-li">
+								<a href="./pages/pricing.html">Pricing</a>
+							</li>
+							<li class="header-li"><a href="./pages/about.html">About</a></li>
+							<li class="header-li">
+								<a href="./pages/contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
 					<div class="btn-schedule-head">
-				<a href="./pages/contact.html" class="btn-schedule"><button class="schedule">Schedule a Demo</button></a>
-			</div>
-				<img class="menu-burger" src="./assets/phone-asset/burger-menu-phone.svg" alt="Menu-de-naviguation">
-				
-			</nav>
-		</header>
+						<a href="./pages/contact.html" class="btn-schedule"
+							><button class="schedule">Schedule a Demo</button></a
+						>
+					</div>
+					<img
+						class="menu-burger"
+						src="./assets/phone-asset/burger-menu-phone.svg"
+						alt="Menu-de-naviguation"
+					/>
+				</nav>
+			</header>
+		</div>
+		<main>
+			<section class="hero">
+				<img
+					class="image-iphone"
+					src="./assets/phone-image/phone-image-home-page.svg"
+					alt="Image d'iphone avec un message en plein milieu de l'ecran"
+				/>
+				<div class="info-hero">
+					<h1>Start building with our APIs for absolutely free.</h1>
+					<div class="input-hero">
+						<input
+							class="input-hero-home"
+							type="email"
+							name="hero"
+							id=""
+							placeholder="Enter email address"
+						/>
+						<a href="./pages/contact.html"
+							><button class="btn-hero">Schedule a Demo</button></a
+						>
+					</div>
+					<div class="contact-hero">
+						<span class="question-hero">Have any question ?</span>
+						<a href="./pages/contact.html">Contact Us</a>
+					</div>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

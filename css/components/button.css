@@ -5,5 +5,47 @@
 
 	--buttons-secondary-normal-state-light: #1b262f;
 	--buttons-secondary-hover-state-light: #ffffff;
-    --buttons-secondary-disabled-state-light: #1b262f;
+	--buttons-secondary-disabled-state-light: #1b262f;
+
+	--border-none-button-text-decoration: none;
+}
+
+.btn-schedule-head {
+	width: 25%;
+}
+
+.schedule {
+	width: 100%;
+	border-radius: 24px;
+	padding: 13px;
+	border: var(--border-none-button);
+	background-color: var(--buttons-primary-normal-state);
+	color: var(--buttons-secondary-hover-state-light);
+}
+
+.schedule:hover {
+	background-color: var(--buttons-primary-disabled-state);
+}
+
+.btn-schedule-head a {
+	text-decoration: var(--border-none-button);
+}
+
+.btn-hero {
+	width: 100%;
+	border-radius: 999px;
+	padding: 10px;
+	border: none;
+	background-color: var(--buttons-primary-normal-state);
+	color: var(--buttons-secondary-hover-state-light);
+}
+
+@media screen and (min-width: 1023px) {
+	.btn-schedule-head {
+		justify-content: end;
+	}
+
+	.schedule {
+		width: 80%;
+	}
 }
