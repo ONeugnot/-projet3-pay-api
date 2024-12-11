@@ -1,0 +1,128 @@
+:root {
+	--font-family-red: "Red Hat Text", serif;
+	--font-family-dm: "DM Serif Display", serif;
+
+	--color-primary-dark-pink: #ba4270;
+	--color-primary-link-water-white: #fbfcfe;
+	--color-backrgound-body: #edf3f8;
+	--color-secondary-suan-juan-blue: #36536b;
+	--color-secondary-mirage-blue: #1b262f;
+	--color-secondary-charm-pink: #da6d97;
+	--color-secondary-light-suan-blue: #6c8294;
+	--color-rond-header: #d2dbe3;
+
+	--typography-body-text-size: 15px;
+	--typography-body-line-size: 28px;
+
+	--typography-headings-h1-large-text-size: 72px;
+	--typography-headings-h1-large-line-size: 72px;
+
+	--typography-headings-h1-small-text-size: 56px;
+	--typography-headings-h1-small-line-size: 56px;
+
+	--typography-headings-h2-text-size: 48px;
+	--typography-headings-h2-line-size: 56px;
+
+	--typography-headings-h3-big-text-size: 32px;
+	--typography-headings-h3-big-line-size: 40px;
+
+	--typography-headings-h3-small-line-size: 18px;
+	--typography-headings-h3-small-line-size: 25px;
+
+	--typography-headings-h4-text-size: 24px;
+	--typography-headings-h4-line-size: 32px;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	color: var(--color-secondary-suan-juan-blue);
+}
+
+.border-rond {
+	position: absolute;
+	background-color: var(--color-rond-header);
+	border-radius: 50%;
+	width: 120vw;
+	height: 120vw;
+	top: -25%;
+	left: -10%;
+	z-index: -1;
+}
+
+.section-hero-home {
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 65%;
+}
+
+.image-iphone {
+	width: 60%;
+}
+
+.info-hero h1 {
+	font-family: var(--font-family-red);
+	color: var(--color-secondary-suan-juan-blue);
+	font-weight: 600;
+	text-align: center;
+	line-height: var(--typography-headings-h3-big-line-size);
+	font-size: var(--typography-headings-h3-big-text-size);
+	gap: 10px;
+}
+
+.input-hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.input-hero a {
+	width: 100%;
+	padding: 10px;
+}
+
+.contact-hero a {
+	text-decoration: none;
+	color: var(--color-secondary-mirage-blue);
+	font-family: var(--font-family-red);
+}
+
+.question-hero {
+	font-family: var(--font-family-red);
+}
+
+@media screen and (min-width: 767px) {
+	.image-iphone {
+		width: 40%;
+	}
+
+	.input-hero a {
+		position: absolute;
+		width: 25%;
+		padding: 1px;
+		right: 60px;
+	}
+
+	.btn-hero {
+		box-shadow: 0px 7px 8px 0px#36536b40;
+	}
+
+	.info-hero h1 {
+		font-size: var(--typography-headings-h2-text-size);
+	}
+
+	.contact-hero {
+		margin-top: 20px;
+	}
+}
