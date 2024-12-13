@@ -34,40 +34,45 @@
 }
 
 main {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
 	color: var(--color-secondary-suan-juan-blue);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 40px;
 }
 
 .border-rond {
 	position: absolute;
 	background-color: var(--color-rond-header);
-	border-radius: 50%;
-	width: 120vw;
-	height: 120vw;
+	border-radius: 0px 0px 80% 80%;
+	width: 100%;
+	height: 60%;
 	top: -25%;
-	left: -10%;
+	left: 0%;
 	z-index: -1;
 }
 
 .section-hero-home {
-	flex-direction: column;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 10px;
 }
 
 .hero {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 	width: 65%;
+	gap: 10px;
 }
 
 .image-iphone {
-	width: 60%;
+	width: 40%;
 }
 
 .info-hero h1 {
@@ -76,7 +81,7 @@ main {
 	font-weight: 600;
 	text-align: center;
 	line-height: var(--typography-headings-h3-big-line-size);
-	font-size: var(--typography-headings-h3-big-text-size);
+	font-size: var(--typography-headings-h2-text-size);
 	gap: 10px;
 }
 
@@ -90,6 +95,7 @@ main {
 .input-hero a {
 	width: 100%;
 	padding: 10px;
+	color: var(--color-primary-link-water-white);
 }
 
 .contact-hero a {
@@ -102,27 +108,162 @@ main {
 	font-family: var(--font-family-red);
 }
 
+.contact-us {
+	font-weight: bold;
+}
+
+.article-partenaire {
+	background-color: #1b262f;
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
+	justify-content: center;
+	gap: 60px;
+}
+
+.right-box-partenaire {
+	width: 100%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.left-box-partenaire {
+	color: var(--color-primary-link-water-white);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 30px;
+}
+
+.partenaire-text {
+	gap: 40px;
+}
+
+.about-btn-partenaire {
+	width: 30%;
+}
+
+.btn-about-partenaire {
+	width: 100%;
+	border-radius: 999px;
+	padding: 15px;
+	border: 1px solid #fbfcfe;
+	background-color: transparent;
+	color: #fbfcfe;
+}
+
+.partenaire-text h2 {
+	font-family: "DM Serif Display", serif;
+	font-size: 36px;
+	color: #fbfcfe;
+	font-weight: 400;
+}
+
+.left-box-partenaire p {
+	color: #fbfcfe;
+	opacity: 70%;
+	font-weight: 400;
+	font-size: var(--typography-body-text-size);
+}
+
 @media screen and (min-width: 767px) {
 	.image-iphone {
-		width: 40%;
+		width: 20%;
 	}
 
 	.input-hero a {
 		position: absolute;
-		width: 25%;
+		width: 35%;
 		padding: 1px;
-		right: 60px;
+		right: 0px;
+	}
+
+	.input-hero {
+		display: flex;
+		justify-content: center;
+	}
+
+	.hero h1 {
+		width: 90%;
+		font-size: 38px;
+	}
+
+	.hero {
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.hero {
+		font-size: 18px;
 	}
 
 	.btn-hero {
 		box-shadow: 0px 7px 8px 0px#36536b40;
-	}
-
-	.info-hero h1 {
-		font-size: var(--typography-headings-h2-text-size);
+		width: 70%;
+		display: flex;
+		align-items: center;
+		text-align: left;
 	}
 
 	.contact-hero {
 		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	.section-hero-home {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.image-iphone {
+		width: 20%;
+	}
+
+	.hero h1 {
+		font-size: var(--typography-headings-h1-large-text-size);
+	}
+
+	.hero {
+		width: 50%;
+		align-items: start;
+		text-align: left;
+	}
+	.contact-hero {
+		text-align: left;
+		display: flex;
+		align-items: start;
+		width: 80%;
+	}
+	.input-hero {
+		width: 80%;
+		right: 90px;
+	}
+	.border-rond {
+		position: absolute;
+		background-color: var(--color-rond-header);
+		border-radius: 80% 80% 80% 80%;
+		width: 50%;
+		height: 80%;
+		top: -15%;
+		left: 1000px;
+		z-index: -1;
 	}
 }

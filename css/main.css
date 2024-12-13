@@ -71,7 +71,8 @@ nav {
 }
 
 .header-li {
-	font-weight: 700;
+	font-weight: 600;
+	color: #36536b;
 }
 
 @media screen and (min-width: 767px) {
@@ -148,4 +149,6 @@ nav {
 	.header-menu-nav a:hover {
 		color: var(--color-secondary-suan-juan-blue);
 	}
+
+
 }

@@ -20,7 +20,8 @@
 	border-radius: 24px;
 	padding: 13px;
 	border: var(--border-none-button);
-	background-color: var(--color-secondary-suan-juan-blue);
+	color: var(--buttons-secondary-hover-state-light);
+	background-color: var(--buttons-primary-normal-state);
 }
 
 .schedule:hover {
@@ -36,14 +37,24 @@
 	border-radius: 999px;
 	padding: 10px;
 	border: none;
+	text-align: center;
+}
+
+.btn-schedule-hero {
+	width: 100%;
 	background-color: var(--buttons-primary-normal-state);
+	padding: 10px;
+	border-radius: 999px;
+	border: none;
+	text-align: center;
+	color: var(--buttons-secondary-hover-state-light);
+	font-family: "Red Hat Text", serif;
 }
 
 @media screen and (min-width: 1023px) {
 	.btn-schedule-head {
 		justify-content: end;
 	}
-
 	.schedule {
 		width: 80%;
 	}
