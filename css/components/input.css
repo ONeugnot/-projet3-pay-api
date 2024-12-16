@@ -16,6 +16,7 @@
 	color: #6c8294;
 }
 
+
 @media screen and (min-width: 767px) {
 	.input-hero {
 		position: relative;
@@ -36,5 +37,4 @@
 		width: 50%;
 		color: #6c8294;
 	}
-	
 }

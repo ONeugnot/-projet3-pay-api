@@ -75,6 +75,33 @@ nav {
 	color: #36536b;
 }
 
+.hero h1 {
+	font-family: var(--font-family-dm);
+	font-size: 34px;
+	font-weight: 700;
+}
+
+.contact-hero {
+	font-family: var(--font-family-red);
+	gap: 10px;
+}
+
+.demo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.demo .hero {
+	width: 90%;
+}
+
+.demo h2 {
+	color: var(--color-secondary-suan-juan-blue);
+	font-family: var(--font-family-dm);
+}
+
 @media screen and (min-width: 767px) {
 	nav {
 		display: flex;
@@ -150,5 +177,13 @@ nav {
 		color: var(--color-secondary-suan-juan-blue);
 	}
 
+	.demo {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
+	.demo .hero {
+		width: 100%;
+	}
 }

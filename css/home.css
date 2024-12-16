@@ -119,6 +119,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	gap: 60px;
+	height: 100vh;
 }
 
 .right-box-partenaire {
@@ -129,6 +130,8 @@ main {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 	gap: 20px;
+	padding: 20px;
+	margin-top: 50px;
 }
 
 .left-box-partenaire {
@@ -145,19 +148,6 @@ main {
 	gap: 40px;
 }
 
-.about-btn-partenaire {
-	width: 30%;
-}
-
-.btn-about-partenaire {
-	width: 100%;
-	border-radius: 999px;
-	padding: 15px;
-	border: 1px solid #fbfcfe;
-	background-color: transparent;
-	color: #fbfcfe;
-}
-
 .partenaire-text h2 {
 	font-family: "DM Serif Display", serif;
 	font-size: 36px;
@@ -170,6 +160,98 @@ main {
 	opacity: 70%;
 	font-weight: 400;
 	font-size: var(--typography-body-text-size);
+	font-family: var(--font-family-red);
+}
+
+.solution-home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.images-solutions {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+}
+
+.solution-text {
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.solution-text h3 {
+	text-align: center;
+	font-family: var(--font-family-dm);
+	font-size: 36px;
+	color: var(--color-secondary-suan-juan-blue);
+}
+
+.solution-home p {
+	color: var(--color-secondary-light-suan-blue);
+	text-align: center;
+	font-family: var(--font-family-red);
+	font-size: 16px;
+}
+
+.code-solution {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.phone-solution {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+.finance-home {
+	gap: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.finance {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.finance img {
+	width: 106px;
+}
+
+.finance h3 {
+	font-family: var(--font-family-red);
+	font-size: 18px;
+	color: var(--color-secondary-suan-juan-blue);
+}
+
+.finance p {
+	text-align: center;
+	font-family: var(--font-family-red);
+	color: var(--color-secondary-light-suan-blue);
+	font-size: 16px;
+}
+
+.deskop {
+	gap: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.demo-home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
 }
 
 @media screen and (min-width: 767px) {
@@ -220,6 +302,36 @@ main {
 	.contact-hero {
 		margin-top: 20px;
 	}
+
+	.left-box-partenaire p {
+		margin: auto;
+		text-align: center;
+		width: 75%;
+	}
+
+	.right-box-partenaire {
+		margin: auto;
+		width: 75%;
+	}
+
+	.partenaire-text h2 {
+		font-size: var(--typography-headings-h2-text-size);
+	}
+
+	.solution-text h3 {
+		font-size: 48px;
+	}
+
+	.finance-home {
+		display: flex;
+		flex-direction: row;
+		margin-top: 70px;
+	}
+
+	.finance {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 @media screen and (min-width: 1023px) {
@@ -253,7 +365,7 @@ main {
 		width: 80%;
 	}
 	.input-hero {
-		width: 80%;
+		width: 95%;
 		right: 90px;
 	}
 	.border-rond {
@@ -263,7 +375,99 @@ main {
 		width: 50%;
 		height: 80%;
 		top: -15%;
-		left: 1000px;
+		right: 0px;
 		z-index: -1;
+	}
+
+	.article-partenaire {
+		display: flex;
+		flex-direction: row-reverse;
+		width: 100%;
+	}
+
+	.partenaire-text {
+		width: 75%;
+	}
+
+	.left-box-partenaire {
+		width: 82%;
+		text-align: start;
+	}
+
+	.left-box-partenaire h2 {
+		width: 100%;
+	}
+
+	.parent-bouton {
+		text-align: center;
+		width: 82%;
+		display: flex;
+	}
+
+	.left-box-partenaire p {
+		text-align: start;
+		width: 100%;
+	}
+	.btn-about-partenaire {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.right-box-partenaire {
+		display: grid;
+		grid-template-columns: 3fr 3fr 3fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.code-solution {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.phone-solution {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	.images-solutions img {
+		width: 60%;
+	}
+
+	.code-solution img {
+		width: 50%;
+	}
+
+	.solution-text {
+		text-align: start;
+	}
+
+	.solution-text P {
+		text-align: start;
+	}
+	.solution-text h3 {
+		text-align: start;
+	}
+	.finance-home {
+		display: flex;
+		flex-direction: row;
+		margin-top: 70px;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.finance {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.deskop {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 70%;
 	}
 }
