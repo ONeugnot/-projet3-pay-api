@@ -71,11 +71,54 @@
 	color: #fbfcfe;
 }
 
+.a-princing {
+	width: 40%;
+}
+
+.btn-princing {
+	width: 100%;
+	padding: 15px;
+	color: var(--color-secondary-suan-juan-blue);
+	border-radius: 999px;
+	font-size: 18px;
+	font-weight: 700;
+	border: 1px solid var(--color-secondary-suan-juan-blue);
+	background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+	.a-princing {
+		margin-top: 50px;
+	}
+
+	.btn-princing {
+		margin-top: 50px;
+		padding: 10px;
+	}
+
+	.btn-schedule-hero {
+		position: absolute;
+		right: 10px;
+		width: 30%;
+	}
+}
+
 @media screen and (min-width: 1023px) {
 	.btn-schedule-head {
 		justify-content: end;
 	}
 	.schedule {
 		width: 80%;
+	}
+
+	.a-princing {
+		width: 20%;
+		display: flex;
+		align-items: start;
+		width: 50%;
+	}
+
+	.btn-princing {
+		width: 100%;
 	}
 }
