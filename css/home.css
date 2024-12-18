@@ -251,7 +251,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center
+	align-items: center;
 }
 
 @media screen and (min-width: 767px) {
@@ -261,9 +261,10 @@ main {
 
 	.input-hero a {
 		position: absolute;
-		width: 35%;
+		width: 100%;
 		padding: 1px;
 		right: 0px;
+		margin-bottom: 45px;
 	}
 
 	.input-hero {

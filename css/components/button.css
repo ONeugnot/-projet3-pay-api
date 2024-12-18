@@ -22,6 +22,7 @@
 	border: var(--border-none-button);
 	color: var(--buttons-secondary-hover-state-light);
 	background-color: var(--buttons-primary-normal-state);
+	font-family: "Red Hat Text", serif;
 }
 
 .schedule:hover {
@@ -38,6 +39,7 @@
 	padding: 10px;
 	border: none;
 	text-align: start;
+	background-color: #ffffff;
 	font-family: "Red Hat Text", serif;
 	font-weight: 500;
 }
@@ -76,14 +78,20 @@
 }
 
 .btn-princing {
-	width: 100%;
+	width: 40%;
 	padding: 15px;
 	color: var(--color-secondary-suan-juan-blue);
+	font-family: "Red Hat Text", serif;
 	border-radius: 999px;
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 15px;
+	font-weight: 650;
 	border: 1px solid var(--color-secondary-suan-juan-blue);
 	background-color: transparent;
+}
+
+.btn-princing:hover {
+	background-color: var(--color-secondary-suan-juan-blue);
+	color: var(--buttons-secondary-hover-state-light);
 }
 
 @media screen and (min-width: 768px) {

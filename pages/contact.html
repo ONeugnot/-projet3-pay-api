@@ -3,29 +3,128 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/normalize.css" />
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="stylesheet" href="css/components/button.css" />
+		<link rel="stylesheet" href="../css/normalize.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/contact.css" />
+		<link rel="stylesheet" href="../css/components/button.css" />
+		<link rel="stylesheet" href="../css/components/input.css" />
+
 		<title>¨Payapi</title>
 	</head>
 	<body>
 		<header>
 			<nav>
 				<div class="tablet-align">
-				<a href="./index.html"><img class="logo-site" src="./assets/nom-site/logo-payapi.svg" alt="Logo du site Payapi" /></a>
-				<ul class="header-menu-nav">
-					<li class="header-li"><a href="./pages/pricing.html">Pricing</a></li>
-					<li class="header-li"><a href="./pages/about.html">About</a></li>
-					<li class="header-li"><a href="./pages/contact.html">Contact</a></li>
-				</ul>
-			</div>
-					<div class="btn-schedule-head">
-				<a href="./pages/contact.html" class="btn-schedule"><button class="schedule">Schedule a Demo</button></a>
-			</div>
-				<img class="menu-burger" src="./assets/phone-asset/burger-menu-phone.svg" alt="Menu-de-naviguation">
+					<a href="../index.html"
+						><img
+							class="logo-site"
+							src="../assets/nom-site/logo-payapi.svg"
+							alt="Logo du site Payapi"
+					/></a>
+					<ul class="header-menu-nav">
+						<li class="header-li">
+							<a href="../pages/pricing.html">Pricing</a>
+						</li>
+						<li class="header-li"><a href="../pages/about.html">About</a></li>
+						<li class="header-li">
+							<a href="../pages/contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="btn-schedule-head">
+					<a href="./pages/contact.html" class="btn-schedule"
+						><button class="schedule">Schedule a Demo</button></a
+					>
+				</div>
+				<img
+					class="menu-burger"
+					src="../assets/phone-asset/burger-menu-phone.svg"
+					alt="Menu-de-naviguation"
+				/>
 			</nav>
 		</header>
-		<div class="rond-tablet"></div>
+		<section class="page-contact">
+			<section class="input-contact">
+				<h1>Submit a help request and we’ll get in touch shortly.</h1>
+				<input type="text" name="text" placeholder="Name" />
+				<input type="email" name="email" placeholder="Email" />
+				<input type="text" name="text" placeholder="Company Name" />
+				<input type="text" name="text" placeholder="Title" />
+				<textarea placeholder="Message"></textarea>
+
+				<div class="checkbox">
+					<input type="checkbox" />
+					<p>
+						Stay up-to-date with company announcements and updates to our API
+					</p>
+				</div>
+				<button type="submit">Submit</button>
+			</section>
+			<section class="end-partenaria">
+				<h2>Join the thousands of innovators already building with us</h2>
+				<div class="partenaria">
+					<img
+						src="../assets/entreprise-colab-blue/tesla-contact-logo-blue.svg"
+						alt=""
+					/>
+					<img
+						src="../assets/entreprise-colab-blue/microsoft-contact-blue.svg"
+						alt=""
+					/>
+					<img
+						src="../assets/entreprise-colab-blue/hewlett-contact-blue.svg"
+						alt=""
+					/>
+					<img
+						src="../assets/entreprise-colab-blue/Oracle-contact-blue.svg"
+						alt=""
+					/>
+					<img
+						src="../assets/entreprise-colab-blue/Google-contact-blue.svg"
+						alt=""
+					/>
+					<img
+						src="../assets/entreprise-colab-blue/nvidia-contact-blue.svg"
+						alt=""
+					/>
+				</div>
+			</section>
+		</section>
+
+		<section class="demo">
+			<div class="demo-hero">
+				<h2>Ready to start ?</h2>
+				<div class="input-hero">
+					<input
+						class="btn-hero"
+						type="email"
+						placeholder="Enter email address"
+					/>
+					<a href="./pages/contact.html"
+						><button class="btn-schedule-hero">Schedule a Demo</button></a
+					>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<img
+					src="../assets/footer/Logo-blanc.svg"
+					alt="logo du site internet"
+				/>
+				<div class="link-site">
+					<a href="../pages/pricing.html">Pricing</a>
+					<a href="../pages/about.html">About</a>
+					<a href="../pages/contact.html">Contact</a>
+				</div>
+				<div class="site">
+					<img src="../assets/footer/facebook-blanc.svg" alt="" />
+					<img src="../assets/footer/twitter-blanc.svg" alt="" />
+					<img src="../assets/footer/link-blanc.svg" alt="" />
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
